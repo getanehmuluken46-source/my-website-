@@ -1,0 +1,1232 @@
+
+<title>ጊዮን ሆቴል</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5f5;
+        color: #222;
+    }
+
+    header {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header h3 {
+        margin: 0 0 15px;
+        font-size: 25px;
+    }
+
+    nav {
+        text-align: center;
+        background: #0088cc;
+        padding: 12px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .hero {
+        text-align: center;
+        background: seagreen;
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .book-btn {
+        display: inline-block;
+        background: #0088cc;
+        color: white;
+        text-decoration: none;
+        padding: 14px 25px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .book-btn:hover {
+        background: #006699;
+    }
+
+    .booking-section {
+        padding: 40px 20px;
+        background: #d9f7fd;
+    }
+
+    .booking-section h3 {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .form {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    }
+
+    .form label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 7px;
+        font-weight: bold;
+    }
+
+    .form input,
+    .form select {
+        width: 100%;
+        padding: 13px;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+
+    .form input:focus,
+    .form select:focus {
+        outline: none;
+        border-color: #0088cc;
+    }
+
+    #totalPrice {
+        font-size: 20px;
+        font-weight: bold;
+        background: #111;
+        color: white;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .confirm {
+        width: 100%;
+        background: #0088cc;
+        color: white;
+        border: none;
+        padding: 14px;
+        border-radius: 7px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .confirm:hover {
+        background: #006699;
+    }
+
+    .about {
+        background: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .about p {
+        max-width: 700px;
+        margin: 15px auto;
+        line-height: 1.8;
+        font-size: 17px;
+    }
+
+    .contact {
+        text-align: center;
+        padding: 40px 20px;
+        background: #eee;
+    }
+
+    .contact p {
+        margin: 10px;
+    }
+
+    footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+
+        .hero h2 {
+            font-size: 28px;
+        }
+
+        nav a {
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        .form {
+            padding: 20px;
+        }
+    }
+.hotel-hero {
+background: linear-gradient(
+rgba(0, 0, 0, 0.65),
+rgba(0, 0, 0, 0.65)
+),
+linear-gradient(135deg, #0088cc, #004466);
+
+color: white;
+text-align: center;
+padding: 80px 20px;
+
+}
+
+.hotel-hero h1 {
+font-size: 42px;
+margin: 10px 0;
+}
+
+.hotel-hero p {
+font-size: 20px;
+line-height: 1.8;
+max-width: 700px;
+margin: 20px auto;
+}
+
+.hero-buttons {
+margin-top: 30px;
+}
+
+.hero-btn {
+display: inline-block;
+padding: 14px 25px;
+margin: 7px;
+border-radius: 8px;
+text-decoration: none;
+font-size: 17px;
+font-weight: bold;
+}
+
+.hero-book {
+background: #00aaff;
+color: white;
+}
+
+.hero-contact {
+background: hwb(0 100% 0%);
+color: #0088cc;
+}
+
+.rooms {
+padding: 45px 20px;
+background: #f5f5f5;
+text-align: center;
+}
+
+.rooms h2 {
+margin-bottom: 30px;
+}
+
+.room-container {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.room-card {
+background: white;
+width: 280px;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+.room-icon {
+font-size: 55px;
+}
+
+.room-card h3 {
+font-size: 22px;
+}
+
+.room-price {
+color: #0088cc;
+font-size: 21px;
+font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+.hotel-hero h1 {
+    font-size: 30px;
+}
+
+.hotel-hero p {
+    font-size: 17px;
+}
+
+.room-card {
+    width: 100%;
+    max-width: 330px;
+}
+
+}
+/* Rooms Section */
+.rooms-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.rooms-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.rooms-section p {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.rooms-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.room-card {
+    background: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+}
+
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room-card h3 {
+    font-size: 22px;
+    margin: 15px 0 8px;
+}
+
+.room-card .price {
+    color: #d4a017;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.room-card button {
+    margin: 15px 0 20px;
+    padding: 11px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.room-card button:hover {
+    background: #d4a017;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-features {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.about-features div {
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+/* CONTACT SECTION */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.contact h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* FOOTER */
+footer {
+    background: #222;
+    color:yellow;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+footer:hover {
+    background: #333;
+}
+/* FOOD MENU */
+.food-menu {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff8ed;
+}
+
+.food-menu h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.food-menu > p {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    width: 250px;
+    background: white;
+    padding: 25px 15px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+}
+
+.food-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.food-card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.food-card p {
+    color: #666;
+}
+
+.food-price {
+    color: #d4a017;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.food-card button {
+    margin-top: 15px;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.food-card button:hover {
+    background: #d4a017;
+    transform: scale(1.05);
+}
+.food-image {
+    width: 110%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+}/* Room card animation */
+
+.room-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.20);
+}
+
+
+/* Button animation */
+
+.hero-btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+
+/* Confirm button animation */
+
+.confirm {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.confirm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+/* 📱 Mobile Design */
+
+@media (max-width: 600px) {
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hotel-hero {
+        padding: 55px 15px;
+    }
+
+    .hotel-hero h1 {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .hotel-hero p {
+        font-size: 16px;
+    }
+
+    /* Buttons */
+    .hero-btn {
+        display: block;
+        margin: 10px auto;
+        max-width: 250px;
+    }
+
+    /* Rooms */
+    .rooms {
+        padding: 35px 15px;
+    }
+
+    .room-card {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+    /* Booking */
+    #booking {
+        padding: 35px 12px;
+    }
+
+    #booking form {
+        padding: 20px;
+    }
+
+    #booking input,
+    #booking select {
+        font-size: 16px;
+    }
+
+    /* Total */
+    #totalPrice {
+        font-size: 18px;
+    }
+
+    /* Confirm button */
+    .confirm {
+        font-size: 17px;
+        padding: 14px;
+    }
+}
+</style>
+
+<!-- HEADER -->
+<header>
+    <h3>🏨 💒🇪🇹 ጊዮን ሆቴል</h3>
+
+    <h2>
+        <marquee>
+            እንኳን ወደ ጊዮን ሆቴል በደህና መጡ! 🚙🚗 MULUKEN.G
+        </marquee>
+    </h2>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+<section class="hotel-hero">
+    <div style="font-size:65px;">
+        🏨
+    </div>
+
+    <h1>
+        እንኳን ወደ ጊዮን ሆቴል
+        በደህና መጡ!
+    </h1>
+
+    <p>
+        በደብረ ማርቆስ ምቹ፣
+        ንጹህ እና ጥራት ያለው
+        የመኖሪያ አገልግሎት
+    </p>
+
+    <div class="hero-buttons">
+
+        <a
+            class="hero-btn hero-book"
+            href="#booking">
+
+            🛏️ Book Now
+
+        </a>
+
+        <a
+            class="hero-btn hero-contact"
+            href="#contact">
+
+            📞 Contact Us
+
+        </a>
+
+    </div>
+  <div>
+
+</section><section class="rooms"><h2>
+    🛏️ የክፍል አይነቶቻችን
+</h2>
+
+<div class="room-container">
+
+    <div class="room-card">
+
+        <div class="room-icon">
+            🛏️
+        </div>
+
+        <h3>
+            Single Room
+        </h3>
+
+        <p>
+            ለአንድ ሰው ምቹ እና ንጹህ
+            ክፍል።
+        </p>
+
+        <div class="room-price">
+            1,000 ETB / Night
+        </div>
+
+    </div>
+
+
+    <div class="room-card">
+
+        <div class="room-icon">
+            🛌
+        </div>
+
+        <h3>
+            Double Room
+        </h3>
+
+        <p>
+            ለሁለት ሰዎች ምቹ እና
+            ሰፊ ክፍል።
+        </p>
+
+        <div class="room-price">
+            1,500 ETB / Night
+        </div>
+
+    </div>
+
+
+    <div class="room-card">
+
+        <div class="room-icon">
+            👑
+        </div>
+
+        <h3>
+            Deluxe Room
+        </h3>
+
+        <p>
+            ልዩ ምቾት እና የተሻለ
+            አገልግሎት።
+        </p>
+
+        <div class="room-price">
+            2,000 ETB / Night
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+    <a href="#">Home</a>
+
+    <a href="#booking">
+        Booking
+    </a>
+  <a href="#menu">🍽️ Food Menu</a>
+    <a href="#about">
+        ስለ እኛ
+    </a>
+
+    <a href="#contact">
+        Contact
+    </a>
+</nav>
+<!-- FOOD MENU -->
+<section class="food-menu" id="menu">
+
+    <h2>🍽️ የምግብ ሜኑ</h2>
+
+    <p>ጣፋጭ፣ ንጹህ እና ጥራት ያለው ምግብ</p>
+
+    <div class="food-container">
+
+        <div class="food-card">
+          <img
+    src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666"
+    alt="Breakfast"
+    class="food-image">
+            <div class="food-icon">🍳</div>
+            <h3>Breakfast</h3>
+            <p>ጠዋት ቁርስ</p>
+            <div class="food-price">200 ETB</div>
+      <button onclick="orderFood('Breakfast', 200)">
+    🛒 Order Now
+</button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-icon">🍛</div>
+            <h3>Special Food</h3>
+            <p>የቤት ልዩ ምግብ</p>
+            <div class="food-price">350 ETB</div>
+        <button onclick="orderFood('Special Food', 350)">
+    🛒 Order Now
+</button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-icon">🍔</div>
+            <h3>Burger</h3>
+            <p>ጣፋጭ በርገር</p>
+            <div class="food-price">300 ETB</div>
+        <button onclick="orderFood('Burger', 300)">
+    🛒 Order Now
+</button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-icon">🍕</div>
+            <h3>Pizza</h3>
+            <p>የሆቴል ልዩ Pizza</p>
+            <div class="food-price">450 ETB</div>
+        <button onclick="orderFood('Pizza', 450)">
+    🛒 Order Now
+</button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-icon">☕</div>
+            <h3>Coffee</h3>
+            <p>ትኩስ ቡና</p>
+            <div class="food-price">100 ETB</div>
+        <button onclick="orderFood('Coffee', 100)">
+    🛒 Order Now
+</button>
+        </div>
+
+        <div class="food-card">
+            <div class="food-icon">🥤</div>
+            <h3>Soft Drink</h3>
+            <p>ቀዝቃዛ መጠጥ</p>
+            <div class="food-price">80 ETB</div>
+        <button onclick="orderFood('Soft Drink', 80)">
+    🛒 Order Now
+</button>
+        </div>
+
+    </div>
+
+</section>
+<!-- HERO -->
+<section class="hero">
+
+    <h2>
+        ጊዮን ሆቴል መለያችን ጥራታችን
+    </h2>
+
+    <p>
+        በደብረ ማርቆስ<br>
+        ምቹ እና ጥራት ያለው<br>
+        አገልግሎት
+    </p>
+
+    <a class="book-btn" href="#booking">
+        🛏️ Book Now
+    </a>
+
+</section>
+
+
+<!-- BOOKING -->
+<section class="booking-section" id="booking">
+
+    <h3>
+        👇 የክፍል Booking
+    </h3>
+
+    <div class="form">
+
+        <!-- NAME -->
+        <label>
+            👤 ሙሉ ስም
+        </label>
+
+        <input
+            id="name"
+            type="text"
+            placeholder="ሙሉ ስም ያስገቡ">
+
+
+        <!-- PHONE -->
+        <label>
+            📞 ስልክ ቁጥር
+        </label>
+
+        <input
+            id="phone"
+            type="tel"
+            placeholder="09xxxxxxxx">
+
+
+        <!-- ROOM -->
+        <label>
+            🛏️ የክፍል አይነት
+        </label>
+
+        <select id="room" onchange="calculateTotal()">
+
+            <option value="1000">
+                Single Room - 1,000 ETB / Night
+            </option>
+
+            <option value="1500">
+                Double Room - 1,500 ETB / Night
+            </option>
+
+            <option value="2000">
+                Deluxe Room - 2,000 ETB / Night
+            </option>
+
+        </select>
+
+
+        <!-- CHECK IN -->
+        <label>
+            👉 Check-in
+        </label>
+
+        <input
+            id="checkin"
+            type="date"
+            onchange="calculateTotal()">
+
+
+        <!-- CHECK OUT -->
+        <label>
+            👉Check-out
+        </label>
+
+        <input
+            id="checkout"
+            type="date"
+            onchange="calculateTotal()">
+
+
+        <!-- GUESTS -->
+        <label>
+            👥 Guests
+        </label>
+
+        <input
+            id="guests"
+            type="number"
+            min="1"
+            value="1">
+
+
+        <!-- TOTAL -->
+        <div id="totalPrice">
+            💰 Total: 0 ETB
+        </div>
+
+
+        <!-- CONFIRM -->
+        <button
+            class="confirm"
+            onclick="confirmBooking()">
+
+            ✅ Confirm Booking
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+
+    <h2>🏨 ስለ ጊዮን ሆቴል</h2>
+
+    <p>
+        ጊዮን ሆቴል በደብረ ማርቆስ
+        ምቹ፣ ንጹህ እና ጥራት ያለው
+        የመኖሪያ አገልግሎት የሚሰጥ
+        ሆቴል ነው።
+    </p>
+
+    <div class="about-features">
+        <div>🛏️ ምቹ ክፍሎች</div>
+        <div>✨ ንጹህ አገልግሎት</div>
+        <div>🤝 ተስማሚ አገልግሎት</div>
+      <div>ጥራት ያላቸው ምግቦችና የመኝታ አገልግሎቶች</div>
+    </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h3>
+        📞 ያግኙን
+    </h3>
+
+    <p>
+        📍 ደብረ ማርቆስ
+    </p>
+
+    <p>
+        👉👉 🏨 0935317781
+    </p>
+  <a href="https://t.me/MG_dmu_et" target="_blank">
+            📱 Telegram
+        </a>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    © 2026 ጊዮን ሆቴል
+    | Made in Ethiopia
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script>
+
+    // Calculate total price
+    function calculateTotal() {
+
+        const roomPrice =
+            Number(document.getElementById("room").value);
+
+        const checkin =
+            document.getElementById("checkin").value;
+
+        const checkout =
+            document.getElementById("checkout").value;
+
+        const totalElement =
+            document.getElementById("totalPrice");
+
+
+        // If dates are not selected
+        if (!checkin || !checkout) {
+
+            totalElement.innerHTML =
+                "💰 Total: 0 ETB";
+
+            return;
+        }
+
+
+        const startDate =
+            new Date(checkin);
+
+        const endDate =
+            new Date(checkout);
+
+
+        // Calculate difference
+        const difference =
+            endDate - startDate;
+
+        const nights =
+            Math.ceil(
+                difference / (1000 * 60 * 60 * 24)
+            );
+
+
+        // Checkout must be after check-in
+        if (nights <= 0) {
+
+            totalElement.innerHTML =
+                "⚠️ Check-out ከ Check-in በኋላ መሆን አለበት";
+
+            return;
+        }
+
+
+        const total =
+            roomPrice * nights;
+
+
+        totalElement.innerHTML =
+            "💰 Total: " +
+            total.toLocaleString() +
+            " ETB" +
+            "<br><small>" +
+            nights +
+            " Night(s) × " +
+            roomPrice.toLocaleString() +
+            " ETB" +
+            "</small>";
+    }
+
+
+
+    // Confirm Booking
+    function confirmBooking() {
+
+        const name =
+            document.getElementById("name").value.trim();
+
+        const phone =
+            document.getElementById("phone").value.trim();
+
+        const roomSelect =
+            document.getElementById("room");
+
+        const room =
+            roomSelect.options[
+                roomSelect.selectedIndex
+            ].text;
+
+        const roomPrice =
+            Number(roomSelect.value);
+
+        const checkin =
+            document.getElementById("checkin").value;
+
+        const checkout =
+            document.getElementById("checkout").value;
+
+        const guests =
+            document.getElementById("guests").value;
+
+
+        // Required information
+        if (
+            !name ||
+            !phone ||
+            !checkin ||
+            !checkout
+        ) {
+
+            alert(
+                "⚠️ እባክዎ ሁሉንም መረጃ ይሙሉ።"
+            );
+
+            return;
+        }
+
+
+        // Calculate nights
+        const startDate =
+            new Date(checkin);
+
+        const endDate =
+            new Date(checkout);
+
+        const difference =
+            endDate - startDate;
+
+        const nights =
+            Math.ceil(
+                difference / (1000 * 60 * 60 * 24)
+            );
+
+
+        // Validate dates
+        if (nights <= 0) {
+
+            alert(
+                "⚠️ Check-out ከ Check-in በኋላ መሆን አለበት።"
+            );
+
+            return;
+        }
+
+
+        // Calculate total
+        const total =
+            roomPrice * nights;
+
+
+        // Booking message
+      const message =
+
+"🏨 አዲስ Booking\n\n" +
+
+"━━━━━━━━━━━━━━\n" +
+
+"👤 ስም: " +
+name +
+"\n" +
+
+"📞 ስልክ: " +
+phone +
+"\n" +
+
+"🛏️ ክፍል: " +
+room +
+"\n" +
+
+"📅 Check-in: " +
+checkin +
+"\n" +
+
+"📅 Check-out: " +
+checkout +
+"\n" +
+
+"🌙 Nights: " +
+nights +
+"\n" +
+
+"👥 Guests: " +
+guests +
+"\n" +
+
+"💰 Total: " +
+total.toLocaleString() +
+" ETB\n" +
+
+"━━━━━━━━━━━━━━";
+
+        // Telegram
+        const telegramURL =
+            "https://t.me/MG_dmu_et?text=" +
+            encodeURIComponent(message);
+
+
+        // Open Telegram
+        window.location.href =
+            telegramURL;
+    }
+  function orderFood(foodName, price) {
+
+    const message =
+        "🍽️ የምግብ ትዕዛዝ\n\n" +
+        "━━━━━━━━━━━━━━\n" +
+        "🍴 Food: " + foodName + "\n" +
+        "💰 Price: " + price + " ETB\n" +
+        "━━━━━━━━━━━━━━";
+
+    const telegramURL =
+        "https://t.me/MG_dmu_et?text=" +
+        encodeURIComponent(message);
+
+    window.location.href = telegramURL;
+}
+</script>
